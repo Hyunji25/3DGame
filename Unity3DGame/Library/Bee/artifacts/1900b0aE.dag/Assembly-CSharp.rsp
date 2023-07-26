@@ -347,10 +347,14 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/Scripts/Camera.cs"
 "Assets/Scripts/Lock/MoveRuller.cs"
 "Assets/Scripts/Lock/PadLockEmissionColor.cs"
 "Assets/Scripts/Lock/PadLockPassword.cs"
 "Assets/Scripts/Lock/TimeBlinking.cs"
+"Assets/Scripts/Player.cs"
+"Assets/Scripts/test/testCamera.cs"
+"Assets/Scripts/test/testPlayerMove.cs"
 -langversion:9.0
 
 /deterministic
