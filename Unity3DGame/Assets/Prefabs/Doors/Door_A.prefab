@@ -11,7 +11,9 @@ GameObject:
   - component: {fileID: 400000}
   - component: {fileID: 3300000}
   - component: {fileID: 2300000}
-  - component: {fileID: 6473236}
+  - component: {fileID: 1156089501104720915}
+  - component: {fileID: 3224501152759175100}
+  - component: {fileID: 8256851838950772052}
   m_Layer: 0
   m_Name: Door_A
   m_TagString: Untagged
@@ -84,8 +86,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &6473236
-MeshCollider:
+--- !u!114 &1156089501104720915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 123b9e2297eb200489227d4a7a331b50, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  open: 0
+  doorOpenAngle: 0
+  doorCloseAngle: -90
+  smoot: 2
+--- !u!65 &3224501152759175100
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -94,7 +112,19 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 4300014, guid: 628e5212ccbe5044ba8b70740d37394e, type: 3}
+  serializedVersion: 2
+  m_Size: {x: 0.10947037, y: 4.22508, z: 2.3388617}
+  m_Center: {x: 0.028565042, y: 2.109679, z: -1.1694309}
+--- !u!65 &8256851838950772052
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.10947037, y: 4.22508, z: 2.3388617}
+  m_Center: {x: 0.028565042, y: 2.109679, z: -1.1694309}
