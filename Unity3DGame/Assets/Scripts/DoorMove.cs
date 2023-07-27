@@ -4,14 +4,14 @@ using UnityEngine;
 
 public class DoorMove : MonoBehaviour
 {
-    public bool open = false;
-    public float doorOpenAngle = 0.0f;
-    public float doorCloseAngle = -90.0f;
-    public float smoot = 2.0f;
+    public bool open = false; // 열려있는가 닫혀있는가
+    public float doorOpenAngle = -90f;
+    public float doorCloseAngle = 0f;
+    public float smoot = 2f;
 
     void Start()
     {
-        
+
     }
 
     public void ChangeDoorState()

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DoorAndPlayer : MonoBehaviour
 {
-    public float interactDiastance = 5.0f; // 문 열고 닫을때 사용
+    public float interactDiastance = 5f;
 
     void Update()
     {
