@@ -348,7 +348,6 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/CameraMove.cs"
-"Assets/Scripts/DoorAndPlayer.cs"
 "Assets/Scripts/DoorMove.cs"
 "Assets/Scripts/EnemyChase.cs"
 "Assets/Scripts/Lock/MoveRuller.cs"
@@ -357,9 +356,6 @@
 "Assets/Scripts/Lock/TimeBlinking.cs"
 "Assets/Scripts/MyGizmo.cs"
 "Assets/Scripts/PlayerMove.cs"
-"Assets/Scripts/WayPoint/Node.cs"
-"Assets/Scripts/WayPoint/WayPoint.cs"
-"Assets/Scripts/WayPoint/WayPointEditor.cs"
 -langversion:9.0
 
 /deterministic

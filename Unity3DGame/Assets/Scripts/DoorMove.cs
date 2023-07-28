@@ -4,32 +4,43 @@ using UnityEngine;
 
 public class DoorMove : MonoBehaviour
 {
-    public bool open = false; // 열려있는가 닫혀있는가
-    public float doorOpenAngle = -90f;
-    public float doorCloseAngle = 0f;
-    public float smoot = 2f;
+    private Animator Anim;
+
+    public bool can;
 
     void Start()
     {
-
-    }
-
-    public void ChangeDoorState()
-    {
-        open = !open;
+        can = false;
+        Anim = GetComponent<Animator>();
     }
 
     void Update()
     {
-        if (open)
+        if (can)
         {
-            Quaternion targetRotation = Quaternion.Euler(0, doorOpenAngle, 0);
-            transform.localRotation = Quaternion.Slerp(transform.localRotation, targetRotation, smoot * Time.deltaTime);
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                //Anim.SetBool("Opening", true);
+                Debug.Log(Anim.GetBool("Opening"));
+            }
         }
-        else
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.collider.CompareTag("Player"))
         {
-            Quaternion targetRotation2 = Quaternion.Euler(0, doorCloseAngle, 0);
-            transform.localRotation = Quaternion.Slerp(transform.localRotation, targetRotation2, smoot * Time.deltaTime);
+            can = true;
+            Debug.Log("can true");
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.collider.CompareTag("Player"))
+        {
+            can = false;
+            Debug.Log("can false");
         }
     }
 }
