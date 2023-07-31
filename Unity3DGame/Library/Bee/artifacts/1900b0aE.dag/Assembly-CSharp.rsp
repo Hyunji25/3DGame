@@ -356,6 +356,7 @@
 "Assets/Scripts/Lock/TimeBlinking.cs"
 "Assets/Scripts/MyGizmo.cs"
 "Assets/Scripts/PlayerMove.cs"
+"Assets/Scripts/Test/DoorMoving.cs"
 -langversion:9.0
 
 /deterministic
