@@ -43,8 +43,8 @@ MonoBehaviour:
     y: 0
     width: 156
     height: 715
-  m_MinSize: {x: 201, y: 221}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 20}
   m_Panes:
   - {fileID: 20}
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_MinSize: {x: 400, y: 200}
   m_MaxSize: {x: 32384, y: 16192}
   vertical: 0
-  controlID: 18
+  controlID: 86
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -121,8 +121,8 @@ MonoBehaviour:
     y: 0
     width: 391
     height: 947
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 276, y: 71}
+  m_MaxSize: {x: 4001, y: 4021}
   m_ActualView: {fileID: 17}
   m_Panes:
   - {fileID: 17}
@@ -251,7 +251,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 200}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
-  controlID: 19
+  controlID: 87
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -277,7 +277,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 8096}
   vertical: 0
-  controlID: 20
+  controlID: 88
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -297,8 +297,8 @@ MonoBehaviour:
     y: 0
     width: 1126
     height: 715
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -473,22 +473,22 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/Prefabs/Stairs
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/Prefabs/Stairs
   m_LastFoldersGridSize: -1
   m_LastProjectPath: C:\Users\SGA\Desktop\test\3DGame\Unity3DGame
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 289}
-    m_SelectedIDs: a65d0000
-    m_LastClickedID: 23974
-    m_ExpandedIDs: 00000000765d00009e5d0000a45d00000e7500001675000000ca9a3b
+    scrollPos: {x: 0, y: 113}
+    m_SelectedIDs: cc6e0000
+    m_LastClickedID: 28364
+    m_ExpandedIDs: 00000000805d0000b65d000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -516,7 +516,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000765d0000
+    m_ExpandedIDs: 00000000805d0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -645,10 +645,10 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_SceneHierarchy:
     m_TreeViewState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 00620000
+      scrollPos: {x: 0, y: 32}
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: d462ffffb064ffff32fbffffca570000d8570000ec57000088580000945800003e59000096590000005a0000045a0000f25a0000fa5a0000145b000032aa0000b6aa0000
+      m_ExpandedIDs: 32fbffffca570000ec5700008c5800005a5900009e5900000c5a0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -931,9 +931,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.37385, y: -0.5874802, z: -9.948181}
+    m_Target: {x: -73.58227, y: 27.155933, z: 8.048711}
     speed: 2
-    m_Value: {x: 2.37385, y: -0.5874802, z: -9.948181}
+    m_Value: {x: -73.58227, y: 27.155933, z: 8.048711}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -980,13 +980,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.010018789, y: 0.98949, z: -0.11780458, w: -0.08392572}
+    m_Target: {x: -0.44188803, y: -0.09542709, z: 0.047619086, w: -0.89083415}
     speed: 2
-    m_Value: {x: -0.0098415185, y: 0.98955923, z: -0.11781286, w: -0.08243676}
+    m_Value: {x: -0.44310194, y: -0.09667982, z: 0.048421588, w: -0.8899265}
   m_Size:
-    m_Target: 9.216668
+    m_Target: 1.8200873
     speed: 2
-    m_Value: 8.819778
+    m_Value: 1.7417103
   m_Ortho:
     m_Target: 0
     speed: 2
