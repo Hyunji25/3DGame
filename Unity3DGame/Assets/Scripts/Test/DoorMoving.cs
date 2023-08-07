@@ -4,15 +4,30 @@ using UnityEngine;
 
 public class DoorMoving : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private Animator animator;
+
+    private bool open;
+
+    private void Start()
     {
-        
+        animator = GetComponent<Animator>();
+        open = false;
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnTriggerEnter(Collider other)
     {
-        
+        if (other.tag == "Player")
+        {
+            animator.SetBool("Open", open);
+        }
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown(KeyCode.E))
+        {
+            animator.SetBool("Open", open);
+            open = !open;
+        }
     }
 }
