@@ -930,7 +930,7 @@ MonoBehaviour:
   volumeTrigger: {fileID: 963194228}
   volumeLayer:
     serializedVersion: 2
-    m_Bits: 448
+    m_Bits: 768
   stopNaNPropagation: 1
   finalBlitToCameraTarget: 0
   antialiasingMode: 0
@@ -986,7 +986,7 @@ GameObject:
   - component: {fileID: 1043004443}
   - component: {fileID: 1043004445}
   - component: {fileID: 1043004444}
-  m_Layer: 8
+  m_Layer: 9
   m_Name: Motion Blur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1033,7 +1033,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: e5120d744d0b953449c44d5cf018f15c, type: 2}
+  sharedProfile: {fileID: 11400000, guid: e62e729db21845748a33a7887c9b60d0, type: 2}
   isGlobal: 0
   blendDistance: 0
   weight: 1
@@ -1048,7 +1048,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1147479201}
   - component: {fileID: 1147479200}
-  m_Layer: 7
+  m_Layer: 8
   m_Name: Bloom
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1067,7 +1067,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 79755a0d157dfb0419e57926bbd9b6b8, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 0b5c260d59df6134cb57c43a02f301be, type: 2}
   isGlobal: 1
   blendDistance: 0
   weight: 1
@@ -1098,7 +1098,7 @@ GameObject:
   - component: {fileID: 1616179274}
   - component: {fileID: 1616179273}
   - component: {fileID: 1616179275}
-  m_Layer: 6
+  m_Layer: 7
   m_Name: Grain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1117,7 +1117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sharedProfile: {fileID: 11400000, guid: 4288ae4dcd5d39947901454100817b12, type: 2}
+  sharedProfile: {fileID: 11400000, guid: 6527f1ece253f4d4f858245abe301a07, type: 2}
   isGlobal: 1
   blendDistance: 0
   weight: 1

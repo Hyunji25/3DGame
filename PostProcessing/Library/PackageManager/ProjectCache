@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638270511683494401
-    m_Hash: 2293531964
+      ticks: 638271361960406430
+    m_Hash: 156888637
   m_LockFileStatus:
     m_FilePath: C:/Users/SGA/Desktop/test/3DGame/PostProcessing/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638270511683584397
-    m_Hash: 2892216316
+      ticks: 638271361960406430
+    m_Hash: 915549958
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
