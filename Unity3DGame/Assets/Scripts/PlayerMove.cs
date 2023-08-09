@@ -17,7 +17,7 @@ public class PlayerMove : MonoBehaviour
 
     void Start()
     {
-        Speed = 5.0f;
+        Speed = 15.0f;
     }
 
     void Update()

@@ -358,6 +358,7 @@
 "Assets/Scripts/PlayerMove.cs"
 "Assets/Scripts/Test/CameraMove1.cs"
 "Assets/Scripts/Test/DoorMoving.cs"
+"Assets/Scripts/Test/EnemyMove.cs"
 "Assets/Scripts/Test/Movement.cs"
 "Assets/Scripts/Test/PlayerMove1.cs"
 -langversion:9.0
