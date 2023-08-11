@@ -349,18 +349,16 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
 "Assets/Scripts/CameraMove.cs"
 "Assets/Scripts/DoorMove.cs"
-"Assets/Scripts/EnemyChase.cs"
 "Assets/Scripts/Lock/MoveRuller.cs"
 "Assets/Scripts/Lock/PadLockEmissionColor.cs"
 "Assets/Scripts/Lock/PadLockPassword.cs"
 "Assets/Scripts/Lock/TimeBlinking.cs"
 "Assets/Scripts/MyGizmo.cs"
 "Assets/Scripts/PlayerMove.cs"
-"Assets/Scripts/Test/CameraMove1.cs"
 "Assets/Scripts/Test/DoorMoving.cs"
 "Assets/Scripts/Test/EnemyMove.cs"
+"Assets/Scripts/Test/EnemyMoving.cs"
 "Assets/Scripts/Test/Movement.cs"
-"Assets/Scripts/Test/PlayerMove1.cs"
 -langversion:9.0
 
 /deterministic
