@@ -856,7 +856,7 @@ GameObject:
   - component: {fileID: 1963116142342498909}
   - component: {fileID: 6792791032950846861}
   - component: {fileID: 9088925076311946120}
-  - component: {fileID: 1004747433876031868}
+  - component: {fileID: 787857204741050142}
   m_Layer: 0
   m_Name: Zombie3
   m_TagString: Untagged
@@ -924,7 +924,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &1004747433876031868
+--- !u!114 &787857204741050142
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -936,9 +936,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 66628cca7e783404f9fa802f1cc05fd3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 0}
   e_WayPoints: []
-  anim: {fileID: 6792791032950846861}
+  isChase: 0
 --- !u!1 &3394673521770725599
 GameObject:
   m_ObjectHideFlags: 0
