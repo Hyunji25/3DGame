@@ -4,30 +4,35 @@ using UnityEngine;
 
 public class DoorMoving : MonoBehaviour
 {
-    private Animator animator;
+    private bool isInsideTrigger = false;
+    public Animator animator;
+    private bool isOpen = false;
 
-    private bool open;
-
-    private void Start()
+    private void OnTriggerEnter(Collider coll)
     {
-        animator = GetComponent<Animator>();
-        open = false;
-    }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if (other.tag == "Player")
+        if (coll.tag == "Player")
         {
-            animator.SetBool("Open", open);
+            isInsideTrigger = true;
         }
     }
 
-    private void Update()
+    private void OnTriggerExit(Collider coll)
     {
-        if(Input.GetKeyDown(KeyCode.E))
+        if (coll.tag == "Player")
         {
-            animator.SetBool("Open", open);
-            open = !open;
+            isInsideTrigger = false;
+        }
+    }
+
+    void Update()
+    {
+        if (isInsideTrigger)
+        {
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                isOpen = !isOpen;
+                animator.SetBool("Open", isOpen);
+            }
         }
     }
 }

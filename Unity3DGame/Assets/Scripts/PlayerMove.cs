@@ -6,7 +6,7 @@ public class PlayerMove : MonoBehaviour
 {
     private float Speed;
     private Rigidbody PRigidbody;
-    float Velocity; // 중력
+    float gravity; // 중력
 
     CharacterController cc;
 
@@ -18,6 +18,7 @@ public class PlayerMove : MonoBehaviour
     void Start()
     {
         Speed = 15.0f;
+        gravity = 75.0f;
     }
 
     void Update()
@@ -30,8 +31,7 @@ public class PlayerMove : MonoBehaviour
 
         dir = Camera.main.transform.TransformDirection(dir);
 
-        Velocity += -9.8f * Time.deltaTime;
-        dir.y = Velocity;
+        dir.y -= gravity * Time.deltaTime;
 
         cc.Move(dir * Speed * Time.deltaTime);
     }

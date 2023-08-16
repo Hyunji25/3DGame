@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 2300000}
   - component: {fileID: 6284707302083614812}
   - component: {fileID: 7984760234465365207}
-  - component: {fileID: 4601002414077637535}
+  - component: {fileID: 5116675817748883350}
+  - component: {fileID: 6050906243164672852}
   m_Layer: 0
   m_Name: Door_A
   m_TagString: Untagged
@@ -94,11 +95,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 100000}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.10947037, y: 4.22508, z: 2.3388615}
-  m_Center: {x: 0.02856516, y: 2.109679, z: -1.1694307}
+  m_Size: {x: 4.5, y: 4.22508, z: 5}
+  m_Center: {x: 0.4, y: 2.109679, z: -1.1694347}
 --- !u!95 &7984760234465365207
 Animator:
   serializedVersion: 5
@@ -120,7 +121,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &4601002414077637535
+--- !u!114 &5116675817748883350
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -132,7 +133,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5c2f8d667b94034459c63000937c355f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  open: 0
-  doorOpenAngle: -90
-  doorCloseAngle: 0
-  smoot: 2
+  animator: {fileID: 7984760234465365207}
+--- !u!64 &6050906243164672852
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 1
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4300010, guid: c2155ffe2a264a143a77825d2c95977d, type: 3}

@@ -856,7 +856,8 @@ GameObject:
   - component: {fileID: 1963116142342498909}
   - component: {fileID: 6792791032950846861}
   - component: {fileID: 9088925076311946120}
-  - component: {fileID: 787857204741050142}
+  - component: {fileID: 5077658044663853637}
+  - component: {fileID: 1725398517333312808}
   m_Layer: 0
   m_Name: Zombie3
   m_TagString: Untagged
@@ -873,7 +874,7 @@ Transform:
   m_GameObject: {fileID: 3271084897250187342}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 9.406754, y: 106.92932, z: -21.75961}
-  m_LocalScale: {x: 3.5, y: 3.5, z: 3.5}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4164758629550527206}
@@ -924,7 +925,7 @@ NavMeshAgent:
   m_BaseOffset: 0
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
---- !u!114 &787857204741050142
+--- !u!114 &5077658044663853637
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -933,11 +934,40 @@ MonoBehaviour:
   m_GameObject: {fileID: 3271084897250187342}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 66628cca7e783404f9fa802f1cc05fd3, type: 3}
+  m_Script: {fileID: 11500000, guid: 637e7af3455c2c24283ea8953b9ec3dc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  e_WayPoints: []
-  isChase: 0
+  navMeshAgent: {fileID: 0}
+  startWaitTime: 4
+  timeToRotate: 2
+  speedWalk: 6
+  speedRun: 9
+  viewRadius: 15
+  viewAngle: 90
+  playerMask:
+    serializedVersion: 2
+    m_Bits: 0
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 0
+  meshResolution: 1
+  edgeIterations: 4
+  edgeDistance: 0.5
+  waypoints: []
+--- !u!136 &1725398517333312808
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3271084897250187342}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.81818
+  m_Direction: 1
+  m_Center: {x: 0, y: 0.88946086, z: 0}
 --- !u!1 &3394673521770725599
 GameObject:
   m_ObjectHideFlags: 0
