@@ -8,8 +8,8 @@ public class EnemyMoving : MonoBehaviour // 순찰하다가 플레이어를 발견하면 추격
     public NavMeshAgent navMeshAgent;
     public float startWaitTime = 4;
     public float timeToRotate = 2;
-    public float speedWalk = 6;
-    public float speedRun = 9;
+    public float speedWalk = 3;
+    public float speedRun = 4;
 
     public float viewRadius = 15;
     public float viewAngle = 90;

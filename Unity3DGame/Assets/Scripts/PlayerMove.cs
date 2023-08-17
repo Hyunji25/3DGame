@@ -5,8 +5,10 @@ using UnityEngine;
 public class PlayerMove : MonoBehaviour
 {
     private float Speed;
+    private float RunSpeed;
     private Rigidbody PRigidbody;
     float gravity; // ม฿ทย
+    float ygravity;
 
     CharacterController cc;
 
@@ -17,8 +19,9 @@ public class PlayerMove : MonoBehaviour
 
     void Start()
     {
-        Speed = 15.0f;
-        gravity = 75.0f;
+        Speed = 4.0f;
+        RunSpeed = 6.0f;
+        gravity = -9.8f;
     }
 
     void Update()
@@ -31,7 +34,19 @@ public class PlayerMove : MonoBehaviour
 
         dir = Camera.main.transform.TransformDirection(dir);
 
-        dir.y -= gravity * Time.deltaTime;
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            transform.position += dir * RunSpeed * Time.deltaTime;
+            Debug.Log("In");
+        }
+        else
+        {
+            transform.position += dir * Speed * Time.deltaTime;
+            Debug.Log("Out");
+        }
+
+        ygravity += gravity * Time.deltaTime;
+        dir.y = ygravity;
 
         cc.Move(dir * Speed * Time.deltaTime);
     }

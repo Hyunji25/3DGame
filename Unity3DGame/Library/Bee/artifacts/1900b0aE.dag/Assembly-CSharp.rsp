@@ -359,6 +359,7 @@
 "Assets/Scripts/Test/DoorMoving.cs"
 "Assets/Scripts/Test/EnemyMove.cs"
 "Assets/Scripts/Test/EnemyMoving.cs"
+"Assets/Scripts/Test/Hiding.cs"
 "Assets/Scripts/Test/Movement.cs"
 "Assets/Scripts/Test/PlayerMoving.cs"
 -langversion:9.0
