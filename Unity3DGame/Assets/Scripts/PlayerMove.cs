@@ -37,12 +37,12 @@ public class PlayerMove : MonoBehaviour
         if (Input.GetKey(KeyCode.LeftShift))
         {
             transform.position += dir * RunSpeed * Time.deltaTime;
-            Debug.Log("In");
+            //Debug.Log("In");
         }
         else
         {
             transform.position += dir * Speed * Time.deltaTime;
-            Debug.Log("Out");
+            //Debug.Log("Out");
         }
 
         ygravity += gravity * Time.deltaTime;

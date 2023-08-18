@@ -4,15 +4,44 @@ using UnityEngine;
 
 public class Hiding : MonoBehaviour
 {
-    // Start is called before the first frame update
+    private GameObject player;
+    private bool check;
+    private bool inout;
+
     void Start()
     {
-        
+        player = GameObject.Find("Player");
+        check = false;
+        inout = false;
     }
 
-    // Update is called once per frame
+    private void OnTriggerEnter(Collider coll)
+    {
+        inout = true;
+        if (Input.GetKeyUp(KeyCode.E) && inout)
+        {
+            GameObject.Find("Hide").transform.Find("CM").gameObject.SetActive(check);
+            check = !check;
+        }
+    }
+
+    private void OnTriggerExit(Collider coll)
+    {
+        inout = false;
+        check = false;
+    }
+
     void Update()
     {
         
+        //hide.SetActive(false);
+        //hide.transform.Find("Camera").gameObject.SetActive(false);
     }
 }
+
+
+/*
+ transform.position
+ 
+ 
+ */

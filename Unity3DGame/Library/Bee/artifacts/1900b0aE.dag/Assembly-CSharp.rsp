@@ -362,6 +362,7 @@
 "Assets/Scripts/Test/Hiding.cs"
 "Assets/Scripts/Test/Movement.cs"
 "Assets/Scripts/Test/PlayerMoving.cs"
+"Assets/Scripts/Test/Test.cs"
 -langversion:9.0
 
 /deterministic
