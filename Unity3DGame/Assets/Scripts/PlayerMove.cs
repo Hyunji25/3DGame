@@ -4,50 +4,41 @@ using UnityEngine;
 
 public class PlayerMove : MonoBehaviour
 {
-    private float Speed;
-    private float RunSpeed;
-    private Rigidbody PRigidbody;
-    float gravity; // 중력
-    float ygravity;
+    [SerializeField]
+    private CameraMove cameraController;
+    private Movement movement3D;
 
-    CharacterController cc;
+    private bool canHide; // 숨을 수 있다 없다
+    private bool Hiding; // 숨어있다 아니다
 
     private void Awake()
     {
-        cc = gameObject.GetComponent<CharacterController>();
+        movement3D = GetComponent<Movement>();
+        canHide = false;
+        Hiding = false;
     }
 
-    void Start()
+    private void Update()
     {
-        Speed = 4.0f;
-        RunSpeed = 6.0f;
-        gravity = -9.8f;
+        float x = Input.GetAxisRaw("Horizontal");
+        float z = Input.GetAxisRaw("Vertical");
+
+        movement3D.MoveTo(new Vector3(x, 0, z));
+
+        float mouseX = Input.GetAxis("Mouse X");
+        float mouseY = Input.GetAxis("Mouse Y");
     }
 
-    void Update()
+    private void OnTriggerEnter(Collider coll)
     {
-        float hor = Input.GetAxisRaw("Horizontal");
-        float ver = Input.GetAxisRaw("Vertical");
-
-        Vector3 dir = new Vector3(hor, 0, ver);
-        dir.Normalize();
-
-        dir = Camera.main.transform.TransformDirection(dir);
-
-        if (Input.GetKey(KeyCode.LeftShift))
+        if (coll.gameObject.tag == "Hide")
         {
-            transform.position += dir * RunSpeed * Time.deltaTime;
-            //Debug.Log("In");
+            canHide = true;
         }
+
         else
         {
-            transform.position += dir * Speed * Time.deltaTime;
-            //Debug.Log("Out");
+            canHide = false;
         }
-
-        ygravity += gravity * Time.deltaTime;
-        dir.y = ygravity;
-
-        cc.Move(dir * Speed * Time.deltaTime);
     }
 }

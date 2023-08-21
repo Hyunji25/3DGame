@@ -9,13 +9,11 @@ public class CameraMove : MonoBehaviour
     float mx; // 마우스 X각도
     float my; // 마우스 Y각도
 
-    // Start is called before the first frame update
     void Start()
     {
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         float hor = Input.GetAxis("Mouse X");

@@ -18,8 +18,9 @@ public class Hiding : MonoBehaviour
     private void OnTriggerEnter(Collider coll)
     {
         inout = true;
-        if (Input.GetKeyUp(KeyCode.E) && inout)
+        if (inout && Input.GetKeyDown(KeyCode.E))
         {
+            Debug.Log("HIDE");
             GameObject.Find("Hide").transform.Find("CM").gameObject.SetActive(check);
             check = !check;
         }
@@ -28,7 +29,7 @@ public class Hiding : MonoBehaviour
     private void OnTriggerExit(Collider coll)
     {
         inout = false;
-        check = false;
+        GameObject.Find("Hide").transform.Find("CM").gameObject.SetActive(false);
     }
 
     void Update()
