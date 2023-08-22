@@ -57,10 +57,12 @@ public class EnemyMoving : MonoBehaviour // 순찰하다가 플레이어를 발견하면 추격
         if (!m_IsPatrol)
         {
             Chasing();
+            Debug.Log("Chasing");
         }
         else
         {
             Patroling();
+            Debug.Log("Patroling");
         }
     }
 

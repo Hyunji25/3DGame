@@ -5,20 +5,34 @@ using UnityEngine;
 public class Test : MonoBehaviour
 {
     public bool state;
-    public GameObject Target;
+    private Vector3 CurrentPosition;
 
     void Start()
     {
         state = false;
-        Target = GameObject.Find("Cube");
+        CurrentPosition = Vector3.zero;
     }
     
     void Update()
     {
-        if (Input.GetKeyUp(KeyCode.E)) // 마우스 왼쪽 클릭
+        if (state == false)
         {
-            GameObject.Find("Hide").transform.Find("CM").gameObject.SetActive(state);
-            state = !state;
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                CurrentPosition = gameObject.transform.position;
+                Debug.Log(CurrentPosition + "In");
+                transform.position = new Vector3(0, 0, 0);
+                state = true;
+            }
+        }
+        else        
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                Debug.Log(transform.position + "Out");
+                transform.position = CurrentPosition; // 원 위치로
+                state = false;
+            }
         }
     }
 }

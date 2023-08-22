@@ -42,7 +42,10 @@ public class Hiding : MonoBehaviour
 
 
 /*
- transform.position
- 
- 
- */
+
+범위에 들어가면 CanHide가 true가 됨
+나가면 false가 됨
+Hide에 걸린 오브젝트의 위치 가져와야함
+
+
+*/
