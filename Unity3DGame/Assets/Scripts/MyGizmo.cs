@@ -12,6 +12,6 @@ public class MyGizmo : MonoBehaviour
         Gizmos.color = color;
 
         // ** Gizmos ±×¸°´Ù
-        Gizmos.DrawWireCube(this.transform.position, new Vector3(10, 10, 10));
+        Gizmos.DrawWireCube(this.transform.position, new Vector3(1, 1, 1));
     }
 }

@@ -33,25 +33,23 @@ public class CameraMove : MonoBehaviour
         transform.eulerAngles = new Vector3(-my, mx, 0);
 
         //if (PlayerMove.GetComponent<PlayerMove>().canHide == true)
+        if (PlayerMove.GetComponent<PlayerMove>().Hiding == false)
         {
-            if (PlayerMove.GetComponent<PlayerMove>().Hiding == false)
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                if (Input.GetKeyDown(KeyCode.E))
-                {
-                    CurrentPosition = gameObject.transform.position;
-                    Debug.Log(CurrentPosition + "In");
-                    transform.position = new Vector3(0, -5, 0); // 숨은 장소 바닥으로
-                    PlayerMove.GetComponent<PlayerMove>().Hiding = true;
-                }
+                CurrentPosition = gameObject.transform.position;
+                Debug.Log(CurrentPosition + "In");
+                transform.position = new Vector3(0, -5, 0); // 숨은 장소 바닥으로
+                PlayerMove.GetComponent<PlayerMove>().Hiding = true;
             }
-            else
+        }
+        else
+        {
+            if (Input.GetKeyDown(KeyCode.E))
             {
-                if (Input.GetKeyDown(KeyCode.E))
-                {
-                    Debug.Log(transform.position + "Out");
-                    transform.position = CurrentPosition; // 원 위치로
-                    PlayerMove.GetComponent<PlayerMove>().Hiding = false;
-                }
+                Debug.Log(transform.position + "Out");
+                transform.position = CurrentPosition; // 원 위치로
+                PlayerMove.GetComponent<PlayerMove>().Hiding = false;
             }
         }
     }
