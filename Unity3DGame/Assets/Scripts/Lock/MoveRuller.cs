@@ -19,7 +19,6 @@ public class MoveRuller : MonoBehaviour
 
     private bool _isActveEmission = false;
 
-
     void Awake()
     {
         _lockPassword = FindObjectOfType<PadLockPassword>();
@@ -120,3 +119,4 @@ public class MoveRuller : MonoBehaviour
         }
     }
 }
+

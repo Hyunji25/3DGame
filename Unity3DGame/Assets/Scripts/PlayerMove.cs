@@ -13,16 +13,48 @@ public class PlayerMove : MonoBehaviour
     public bool Hiding; // 숨어있다 아니다
     private Vector3 CurrentPosition;
 
+    private bool isPaused;
+
     private void Awake()
     {
         movement3D = GetComponent<Movement>();
         canHide = false;
         Hiding = false;
         CurrentPosition = Vector3.zero;
+        isPaused = false; // 정지상태인가
     }
 
     private void Update()
     {
+        float x = Input.GetAxisRaw("Horizontal");
+        float z = Input.GetAxisRaw("Vertical");
+
+        movement3D.MoveTo(new Vector3(x, 0, z));
+
+        float mouseX = Input.GetAxis("Mouse X");
+        float mouseY = Input.GetAxis("Mouse Y");
+
+        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+        RaycastHit hit;
+
+        if (Physics.Raycast(ray, out hit))
+        {
+            //Debug.Log(hit.transform.gameObject);
+
+            if (hit.transform.gameObject.tag == "Lock")
+            {
+                if (Input.GetMouseButtonDown(0))
+                {
+                    Time.timeScale = 0;
+                }
+                if (Input.GetMouseButtonDown(1))
+                {
+                    Time.timeScale = 1;
+                }
+            }
+        }
+        
+        /*
         if (canHide == true)
         {
             if (Hiding == false)
@@ -45,15 +77,7 @@ public class PlayerMove : MonoBehaviour
                 }
             }
         }
-
-        float x = Input.GetAxisRaw("Horizontal");
-        float z = Input.GetAxisRaw("Vertical");
-
-        movement3D.MoveTo(new Vector3(x, 0, z));
-
-        float mouseX = Input.GetAxis("Mouse X");
-        float mouseY = Input.GetAxis("Mouse Y");
-
+         */
     }
 
     private void OnTriggerEnter(Collider coll)

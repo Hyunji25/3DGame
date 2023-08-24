@@ -32,6 +32,7 @@ public class CameraMove : MonoBehaviour
             my = -90;
         transform.eulerAngles = new Vector3(-my, mx, 0);
 
+        /*
         //if (PlayerMove.GetComponent<PlayerMove>().canHide == true)
         if (PlayerMove.GetComponent<PlayerMove>().Hiding == false)
         {
@@ -52,5 +53,6 @@ public class CameraMove : MonoBehaviour
                 PlayerMove.GetComponent<PlayerMove>().Hiding = false;
             }
         }
+         */
     }
 }
